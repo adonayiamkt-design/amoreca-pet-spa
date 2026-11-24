@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amoreca-pet-spa.netlify.app/sitemap.xml
