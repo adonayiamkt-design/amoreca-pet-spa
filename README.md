@@ -1,5 +1,7 @@
 # Amoreca Pet Spa — Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/610f72de-2676-4802-ac72-e1558f0cda91/deploy-status)](https://app.netlify.com/projects/amorecapetspa/deploys)
+
 Site institucional e comercial de banho e tosa. HTML/CSS/JS puro — sem build, sem dependências.
 
 ## Como abrir
