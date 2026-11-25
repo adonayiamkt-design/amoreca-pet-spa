@@ -1,2 +1,8 @@
 .DS_Store
 site-publicacao.zip
+
+# Local Netlify folder
+.netlify
+
+# Skills instaladas pelo Netlify CLI (não fazem parte do site)
+.agents/
