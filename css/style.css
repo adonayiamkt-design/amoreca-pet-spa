@@ -808,6 +808,11 @@ body.nav-open { overflow: hidden; }
 }
 .valor-bloco:nth-child(even) .valor-bloco__photo { order: 2; }
 
+/* Bloco sem foto: tabela em largura total */
+.valor-bloco.valor-bloco--full { grid-template-columns: minmax(0, 1fr); }
+.valor-bloco--full .valor-bloco__body > p { max-width: 76ch; }
+.valor-bloco--full .tabela { min-width: 560px; }
+
 .valor-bloco__photo {
   aspect-ratio: 4 / 5;
   align-self: start;

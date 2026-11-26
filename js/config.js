@@ -30,6 +30,7 @@ window.SITE_CONFIG = {
      Cada item entre <li> ... </li> é uma linha do rodapé.     */
   horarios: [
     "Seg a sáb · 08:00 às 19:00 hrs",
-    "Atendimentos agendados"
+    "Atendimento 100% presencial, com hora marcada",
+    "Até 19h · sem filas e sem espera"
   ]
 };
