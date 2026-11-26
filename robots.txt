@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amorecapetspa.netlify.app/sitemap.xml
+Sitemap: https://adonayiamkt-design.github.io/amoreca-pet-spa/sitemap.xml
