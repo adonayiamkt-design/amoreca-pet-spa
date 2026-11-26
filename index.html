@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 
   <!-- ============ Dados estruturados (Local Business) — substitua pelos dados reais ============ -->
   <script type="application/ld+json">
@@ -157,74 +157,268 @@
       </div>
     </section>
 
-    <!-- ==================== SEÇÃO 4 — SERVIÇOS ==================== -->
+    <!-- ==================== SEÇÃO 4 — SERVIÇOS E VALORES ==================== -->
     <section class="section servicos" id="servicos" aria-labelledby="servicos-titulo">
       <div class="container">
         <header class="section__head reveal">
-          <p class="eyebrow">Nossos serviços</p>
-          <h2 id="servicos-titulo">Cuidados pensados para <em>cada pet</em>.</h2>
-          <p class="section__lead">Serviços configuráveis — edite os cards abaixo conforme o estabelecimento realmente oferece.</p>
+          <p class="eyebrow">Serviços e valores</p>
+          <h2 id="servicos-titulo">Transparência do primeiro <em>ao último detalhe</em>.</h2>
+          <p class="section__lead">Banho e tosa para cães e gatos com a Linha Profissional Ibasa. Valores por porte e pelagem, confirmados na avaliação do pet.</p>
         </header>
 
-        <!-- ============ SERVIÇOS — edite nome, descrição e foto de cada card ============ -->
-        <div class="servicos__grid">
-          <article class="card reveal">
-            <figure class="photo card__photo" style="--ph:#F9C6D6">
-              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/servico-banho.jpg &middot; 4:3</small></span>
-              <img src="img/servico-banho.jpg" alt="Cão em banho com espuma delicada na Amoreca Pet Spa" width="800" height="600" loading="lazy" onerror="this.classList.add('is-missing')">
+        <div class="valores__lista">
+
+          <!-- ============ BLOCO 1 — BANHOS AVULSOS ============ -->
+          <article class="valor-bloco reveal">
+            <figure class="photo valor-bloco__photo" style="--ph:#F9C6D6">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-banho.jpg &middot; 4:5</small></span>
+              <img src="img/valores-banho.jpg" alt="Cão tomando banho com espuma delicada na Amoreca Pet Spa" width="800" height="1000" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
-            <div class="card__body">
-              <h3>Banho</h3>
-              <p>Banho com produtos selecionados, secagem cuidadosa e finalização para um pet cheiroso, limpo e confortável.</p>
-              <a class="btn btn--ghost btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Banho" data-track="whatsapp_servico">Consultar e agendar</a>
+            <div class="valor-bloco__body">
+              <p class="valor-tag">Cachorros &middot; Somente cães</p>
+              <h3>Banhos avulsos</h3>
+              <p>Trabalhamos com toda a Linha Profissional Ibasa. Escolha entre banho tradicional e terapêutico, conforme a necessidade do pet.</p>
+
+              <div class="valor-sub">
+                <h4>Banho por porte e pelagem</h4>
+                <span class="valor-selo">Linha Ibasa</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Banho por porte e pelagem</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Porte / pelagem</th>
+                      <th scope="col">Banho tradicional</th>
+                      <th scope="col">Banho terapêutico</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Pequeno &middot; curto</th><td class="preco">R$ 65</td><td class="preco">R$ 90</td></tr>
+                    <tr><th scope="row">Pequeno &middot; longo</th><td class="preco">R$ 75</td><td class="preco">R$ 100</td></tr>
+                    <tr><th scope="row">Médio &middot; curto</th><td class="preco">R$ 100</td><td class="preco">R$ 130</td></tr>
+                    <tr><th scope="row">Médio &middot; longo</th><td class="preco">R$ 110</td><td class="preco">R$ 140</td></tr>
+                    <tr><th scope="row">Grande &middot; curto</th><td class="preco">R$ 140</td><td class="preco">R$ 175</td></tr>
+                    <tr><th scope="row">Grande &middot; longo</th><td class="preco">R$ 150</td><td class="preco">R$ 185</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="valor-nota"><strong>Desconto no banho terapêutico:</strong> R$ 10 de desconto quando o tutor trouxer o shampoo medicamentoso prescrito pelo médico-veterinário.</p>
+
+              <a class="btn btn--primary btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Banho" data-track="whatsapp_valores_banho">Agendar banho</a>
             </div>
           </article>
 
-          <article class="card reveal">
-            <figure class="photo card__photo" style="--ph:#E8D5F2">
-              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/servico-tosa.jpg &middot; 4:3</small></span>
-              <img src="img/servico-tosa.jpg" alt="Tosa na tesoura sendo realizada com cuidado por profissional" width="800" height="600" loading="lazy" onerror="this.classList.add('is-missing')">
+          <!-- ============ BLOCO 2 — COLORIMETRIA ============ -->
+          <article class="valor-bloco reveal">
+            <figure class="photo valor-bloco__photo" style="--ph:#E8D5F2">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-colorimetria.jpg &middot; 4:5</small></span>
+              <img src="img/valores-colorimetria.jpg" alt="Pet com colorimetria segura nas orelhas, feita com produtos próprios para animais" width="800" height="1000" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
-            <div class="card__body">
-              <h3>Tosa na tesoura</h3>
-              <p>Acabamento artesanal respeitando o estilo e a estrutura do seu pet. Resultado uniforme, elegante e confortável.</p>
-              <a class="btn btn--ghost btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Tosa na tesoura" data-track="whatsapp_servico">Consultar e agendar</a>
+            <div class="valor-bloco__body">
+              <p class="valor-tag">Cachorros &middot; Produtos seguros para pets</p>
+              <h3>Colorimetria Pet</h3>
+              <p>Tinta semipermanente segura para pets. Consulte avaliação e disponibilidade de cores e estilos.</p>
+
+              <div class="valor-sub">
+                <h4>Detalhes e estilizada</h4>
+                <span class="valor-selo">Sob avaliação</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Colorimetria pet por porte</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Serviço</th>
+                      <th scope="col">Porte P</th>
+                      <th scope="col">Porte M</th>
+                      <th scope="col">Porte G</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Detalhes (orelhas, rabinho ou topete)</th><td class="preco">A partir de R$ 50</td><td class="preco">A partir de R$ 65</td><td class="preco">A partir de R$ 80</td></tr>
+                    <tr><th scope="row">Estilizada (mechas amplas / degradê)</th><td class="preco">R$ 110 a R$ 150</td><td class="preco">R$ 140 a R$ 190</td><td class="preco">R$ 170 a R$ 240</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="valor-nota"><strong>Colorimetria com cuidado:</strong> tinta semipermanente segura para pets. Consulte avaliação e disponibilidade de cores e estilos.</p>
+
+              <a class="btn btn--primary btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Colorimetria" data-track="whatsapp_valores_colorimetria">Consultar colorimetria</a>
             </div>
           </article>
 
-          <article class="card reveal">
-            <figure class="photo card__photo" style="--ph:#F3DDF0">
-              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/servico-higienica.jpg &middot; 4:3</small></span>
-              <img src="img/servico-higienica.jpg" alt="Patas de pet com tosa higiênica bem finalizada" width="800" height="600" loading="lazy" onerror="this.classList.add('is-missing')">
+          <!-- ============ BLOCO 3 — PLANOS DE ASSINATURA ============ -->
+          <article class="valor-bloco reveal">
+            <figure class="photo valor-bloco__photo" style="--ph:#F3DDF0">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-planos.jpg &middot; 4:5</small></span>
+              <img src="img/valores-planos.jpg" alt="Cão limpo e finalizado após o banho, com toalha e laço" width="800" height="1000" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
-            <div class="card__body">
-              <h3>Tosa higiênica</h3>
-              <p>Higiene completa em áreas sensíveis, patinhas e regiões de contato — confortável para o dia a dia do seu pet.</p>
-              <a class="btn btn--ghost btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Tosa higiênica" data-track="whatsapp_servico">Consultar e agendar</a>
+            <div class="valor-bloco__body">
+              <p class="valor-tag">Cachorros &middot; Planos mensais</p>
+              <h3>Planos de assinatura</h3>
+              <p>Planos recorrentes com benefícios inclusos. Os valores abaixo são mensais e exclusivos para cachorros.</p>
+
+              <div class="valor-sub">
+                <h4>Plano quinzenal</h4>
+                <span class="valor-selo">2 banhos + 1 tosa higiênica</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Plano quinzenal por porte e pelagem</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Porte / pelagem</th>
+                      <th scope="col">Valor mensal</th>
+                      <th scope="col">Valor por banho</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Pequeno &middot; curto</th><td class="preco">R$ 120</td><td class="preco">R$ 60</td></tr>
+                    <tr><th scope="row">Pequeno &middot; longo</th><td class="preco">R$ 138</td><td class="preco">R$ 69</td></tr>
+                    <tr><th scope="row">Médio &middot; curto</th><td class="preco">R$ 184</td><td class="preco">R$ 92</td></tr>
+                    <tr><th scope="row">Médio &middot; longo</th><td class="preco">R$ 200</td><td class="preco">R$ 100</td></tr>
+                    <tr><th scope="row">Grande &middot; curto</th><td class="preco">R$ 256</td><td class="preco">R$ 128</td></tr>
+                    <tr><th scope="row">Grande &middot; longo</th><td class="preco">R$ 275</td><td class="preco">R$ 137,50</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="valor-sub">
+                <h4>Plano mensal</h4>
+                <span class="valor-selo">4 banhos + 1 tosa higiênica + 1 hidratação Ibasa</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Plano mensal por porte e pelagem</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Porte / pelagem</th>
+                      <th scope="col">Valor mensal</th>
+                      <th scope="col">Valor por banho</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Pequeno &middot; curto</th><td class="preco">R$ 220</td><td class="preco">R$ 55</td></tr>
+                    <tr><th scope="row">Pequeno &middot; longo</th><td class="preco">R$ 256</td><td class="preco">R$ 64</td></tr>
+                    <tr><th scope="row">Médio &middot; curto</th><td class="preco">R$ 340</td><td class="preco">R$ 85</td></tr>
+                    <tr><th scope="row">Médio &middot; longo</th><td class="preco">R$ 375</td><td class="preco">R$ 93,75</td></tr>
+                    <tr><th scope="row">Grande &middot; curto</th><td class="preco">R$ 475</td><td class="preco">R$ 118,75</td></tr>
+                    <tr><th scope="row">Grande &middot; longo</th><td class="preco">R$ 510</td><td class="preco">R$ 127,50</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="valor-nota"><strong>Adicionais opcionais nos planos:</strong> upgrade para Banho Terapêutico + R$ 20 por sessão nos portes P e M; + R$ 25 por sessão no porte G. Colorimetria no Plano Mensal: + R$ 55 a R$ 80/mês, com 1 aplicação + 1 retoque.</p>
+              <p class="valor-obs">Planos exclusivos para cachorros. Porte e pelagem são confirmados na avaliação do pet.</p>
+
+              <a class="btn btn--primary btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Planos de assinatura" data-track="whatsapp_valores_planos">Quero um plano</a>
             </div>
           </article>
 
-          <article class="card reveal">
-            <figure class="photo card__photo" style="--ph:#A8E6CF">
-              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/servico-cuidados.jpg &middot; 4:3</small></span>
-              <img src="img/servico-cuidados.jpg" alt="Gato recebendo cuidados especiais e escovação em clima de spa" width="800" height="600" loading="lazy" onerror="this.classList.add('is-missing')">
+          <!-- ============ BLOCO 4 — CAT FRIENDLY (GATOS) ============ -->
+          <article class="valor-bloco reveal">
+            <figure class="photo valor-bloco__photo" style="--ph:#A8E6CF">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-gatos.jpg &middot; 4:5</small></span>
+              <img src="img/valores-gatos.jpg" alt="Gato recebendo manejo gentil e cuidado Cat Friendly na Amoreca Pet Spa" width="800" height="1000" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
-            <div class="card__body">
-              <h3>Cuidados especiais</h3>
-              <p>Hidratação, escovação, limpeza de ouvidos e cuidados sob medida — incluindo filhotes e pets idosos.</p>
-              <a class="btn btn--ghost btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Cuidados especiais" data-track="whatsapp_servico">Consultar e agendar</a>
+            <div class="valor-bloco__body">
+              <p class="valor-tag">Gatos &middot; Somente avulsos</p>
+              <h3>Atendimento Cat Friendly</h3>
+              <p>Atendimento felino avulso com manejo gentil e ambiente pensado para reduzir estímulos e estresse. Não oferecemos planos para gatos.</p>
+
+              <div class="valor-sub">
+                <h4>Banhos felinos</h4>
+                <span class="valor-selo">Linha Ibasa</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Banhos felinos por pelagem</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Serviço</th>
+                      <th scope="col">Pelo curto</th>
+                      <th scope="col">Pelo longo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Banho Cat Friendly<small>Linha Ibasa, manejo sem estresse, secagem silenciosa, corte de unhas e limpeza de ouvidos</small></th>
+                      <td class="preco">R$ 95</td>
+                      <td class="preco">R$ 125</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Banho Terapêutico Felino<small>Protocolo dermatológico Ibasa com pausa controlada</small></th>
+                      <td class="preco">R$ 120</td>
+                      <td class="preco">R$ 150</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="valor-sub">
+                <h4>Tosa higiênica felina</h4>
+                <span class="valor-selo">Avulsa ou junto do banho</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Tosa higiênica felina</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Modalidade</th>
+                      <th scope="col">Pelo curto</th>
+                      <th scope="col">Pelo longo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Avulsa</th><td class="preco">R$ 45</td><td class="preco">R$ 60</td></tr>
+                    <tr><th scope="row">Feita junto com o banho</th><td class="preco">+ R$ 25</td><td class="preco">+ R$ 30</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="valor-sub">
+                <h4>Desembolo e remoção de nós</h4>
+                <span class="valor-selo">Orçamento no check-in</span>
+              </div>
+
+              <div class="tabela-wrap">
+                <table class="tabela">
+                  <caption class="visually-hidden">Desembolo e remoção de nós</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Pelagem</th>
+                      <th scope="col">Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">Pelo curto</th><td class="preco">A partir de R$ 30</td></tr>
+                    <tr><th scope="row">Pelo longo</th><td class="preco">R$ 45 a R$ 90 &middot; avaliação no check-in</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="valor-nota"><strong>Cuidado felino especializado:</strong> atendimento Cat Friendly, banho terapêutico e produtos profissionais Ibasa. A avaliação individual ajuda a escolher o manejo adequado.</p>
+
+              <a class="btn btn--primary btn--small" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa="Cat Friendly (gatos)" data-track="whatsapp_valores_gatos">Agendar para meu gato</a>
             </div>
           </article>
+
         </div>
 
-        <!-- CTA após apresentação dos serviços (estratégia de conversão 2) -->
         <div class="band-cta reveal">
-          <p>Não achou o que precisa? Conte-nos sobre o seu pet.</p>
-          <a class="btn btn--primary" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa data-track="whatsapp_servicos_cta">Agendar pelo WhatsApp</a>
+          <p>Ficou com dúvida sobre porte, pelagem ou qual serviço escolher?</p>
+          <a class="btn btn--primary" href="https://wa.me/5517988415954?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20pet.%20Poderiam%20me%20passar%20as%20informa%C3%A7%C3%B5es%3F" data-wa data-track="whatsapp_servicos_cta">Falar com a Amoreca</a>
         </div>
       </div>
     </section>
-
     <!-- ==================== SEÇÃO 5 — PROVA SOCIAL ==================== -->
     <section class="section prova" id="prova" aria-labelledby="prova-titulo">
       <div class="container">
@@ -427,7 +621,7 @@
     <div class="lightbox__count" aria-hidden="true"></div>
   </div>
 
-  <script src="js/config.js?v=3"></script>
-  <script src="js/main.js?v=3"></script>
+  <script src="js/config.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>
