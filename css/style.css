@@ -704,9 +704,11 @@ address { font-style: normal; }
   justify-content: center;
   padding: 64px 76px;
   opacity: 0;
-  transition: opacity 0.3s;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s, visibility 0.3s;
 }
-.lightbox.is-open { opacity: 1; }
+.lightbox.is-open { opacity: 1; visibility: visible; pointer-events: auto; }
 
 .lightbox__figure {
   margin: 0;
