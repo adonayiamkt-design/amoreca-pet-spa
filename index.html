@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
 
   <!-- ============ Dados estruturados (Local Business) — substitua pelos dados reais ============ -->
   <script type="application/ld+json">
@@ -119,10 +119,13 @@
         </div>
 
         <div class="hero__media reveal">
-          <!-- FOTO: substituir img/hero.jpg por uma foto real de dois pets bem cuidados (cão e gato), proporção 4:5 -->
-          <figure class="photo photo--hero" style="--ph:#F9C6D6">
-            <span class="photo__hint" aria-hidden="true">Espaço reservado<small>Foto: dois pets bem cuidados<br>img/hero.jpg &middot; 4:5</small></span>
-            <img src="img/hero.jpg" alt="Dois pets bem cuidados, um cão e um gato, após o banho na Amoreca Pet Spa" width="800" height="1000" loading="eager" onerror="this.classList.add('is-missing')">
+          <!-- FOTO: foto da groomer Eduarda Cristina (img/hero.jpg), proporção 4:5 -->
+          <figure class="hero__figure">
+            <div class="photo photo--hero" style="--ph:#F9C6D6">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>Foto: Groomer Eduarda Cristina<br>img/hero.jpg &middot; 4:5</small></span>
+              <img src="img/hero.jpg" alt="Groomer Eduarda Cristina segurando a tesoura na Amoreca Pet Spa" width="1064" height="1200" loading="eager" onerror="this.classList.add('is-missing')">
+            </div>
+            <figcaption class="hero__credit">Groomer - Eduarda Cristina</figcaption>
           </figure>
         </div>
       </div>
@@ -213,10 +216,22 @@
 
           <!-- ============ BLOCO 2 — TOSA HIGIÉNICA E NA MÁQUINA ============ -->
           <article class="valor-bloco reveal">
-            <figure class="photo valor-bloco__photo" style="--ph:#F9C6D6">
-              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-higienica.jpg &middot; 4:5</small></span>
-              <img src="img/valores-higienica.jpg" alt="Cão pequeno de roupão com a marca d'água Amoreca após o banho e a tosa na máquina" width="1050" height="1400" loading="lazy" onerror="this.classList.add('is-missing')">
-            </figure>
+            <div class="valor-bloco__photo valor-bloco__photos">
+              <figure class="valor-bloco__figure">
+                <div class="photo" style="--ph:#F9C6D6">
+                  <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-higienica.jpg &middot; 4:5</small></span>
+                  <img src="img/valores-higienica.jpg" alt="Patas do cão após a tosa higiênica na Amoreca Pet Spa" width="975" height="1300" loading="lazy" onerror="this.classList.add('is-missing')">
+                </div>
+                <figcaption class="photo__caption">Tosa higiênica</figcaption>
+              </figure>
+              <figure class="valor-bloco__figure">
+                <div class="photo" style="--ph:#A8E6CF">
+                  <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-maquina.jpg &middot; 4:5</small></span>
+                  <img src="img/valores-maquina.jpg" alt="Shih Tzu com bandana no pescoço após a tosa na máquina na Amoreca Pet Spa" width="975" height="1300" loading="lazy" onerror="this.classList.add('is-missing')">
+                </div>
+                <figcaption class="photo__caption">Tosa na máquina</figcaption>
+              </figure>
+            </div>
             <div class="valor-bloco__body">
               <p class="valor-tag">Cachorros &middot; Serviços caninos</p>
               <h3>Tosa higiênica e tosa na máquina</h3>
@@ -256,7 +271,7 @@
           <article class="valor-bloco reveal">
             <figure class="photo valor-bloco__photo" style="--ph:#F9C6D6">
               <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-tosa.jpg &middot; 4:5</small></span>
-              <img src="img/valores-tosa.jpg" alt="Cão branco com tosa bebê finalizada na tesoura, em pé na mesa de tosa da Amoreca Pet Spa" width="1050" height="1400" loading="lazy" onerror="this.classList.add('is-missing')">
+              <img src="img/valores-tosa.jpg" alt="Spitz Alemão creme com tosa na tesoura finalizada, de pé na mesa de tosa da Amoreca Pet Spa" width="977" height="1300" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
             <div class="valor-bloco__body">
               <p class="valor-tag">Cachorros &middot; Banho + tosa</p>
@@ -421,7 +436,7 @@
           <article class="valor-bloco reveal">
             <figure class="photo valor-bloco__photo" style="--ph:#A8E6CF">
               <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-gatos.jpg &middot; 4:5</small></span>
-              <img src="img/valores-gatos.jpg" alt="Gato recebendo manejo gentil e cuidado Cat Friendly na Amoreca Pet Spa" width="800" height="1000" loading="lazy" onerror="this.classList.add('is-missing')">
+              <img src="img/valores-gatos.jpg" alt="Gato peludo com laço vermelho no pescoço após o banho Cat Friendly na Amoreca Pet Spa" width="1097" height="1200" loading="lazy" onerror="this.classList.add('is-missing')">
             </figure>
             <div class="valor-bloco__body">
               <p class="valor-tag">Gatos &middot; Somente avulsos</p>
@@ -718,8 +733,8 @@
     <div class="lightbox__count" aria-hidden="true"></div>
   </div>
 
-  <script src="js/config.js?v=8"></script>
-  <script src="js/main.js?v=8"></script>
+  <script src="js/config.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
   <script>
   window.addEventListener('load', function(){
     document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('is-visible');});
