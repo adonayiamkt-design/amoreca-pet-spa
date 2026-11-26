@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=8">
 
   <!-- ============ Dados estruturados (Local Business) — substitua pelos dados reais ============ -->
   <script type="application/ld+json">
@@ -212,7 +212,11 @@
           </article>
 
           <!-- ============ BLOCO 2 — TOSA HIGIÉNICA E NA MÁQUINA ============ -->
-          <article class="valor-bloco valor-bloco--full reveal">
+          <article class="valor-bloco reveal">
+            <figure class="photo valor-bloco__photo" style="--ph:#F9C6D6">
+              <span class="photo__hint" aria-hidden="true">Espaço reservado<small>img/valores-higienica.jpg &middot; 4:5</small></span>
+              <img src="img/valores-higienica.jpg" alt="Cão pequeno de roupão com a marca d'água Amoreca após o banho e a tosa na máquina" width="1050" height="1400" loading="lazy" onerror="this.classList.add('is-missing')">
+            </figure>
             <div class="valor-bloco__body">
               <p class="valor-tag">Cachorros &middot; Serviços caninos</p>
               <h3>Tosa higiênica e tosa na máquina</h3>
@@ -714,7 +718,22 @@
     <div class="lightbox__count" aria-hidden="true"></div>
   </div>
 
-  <script src="js/config.js?v=7"></script>
-  <script src="js/main.js?v=7"></script>
+  <script src="js/config.js?v=8"></script>
+  <script src="js/main.js?v=8"></script>
+  <script>
+  window.addEventListener('load', function(){
+    document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('is-visible');});
+    setTimeout(function(){
+      var i = window.innerWidth, alvos = [];
+      document.querySelectorAll('body *').forEach(function(el){
+        var r = el.getBoundingClientRect();
+        if (r.width > 0 && (r.right > i + 1 || r.left < -1)) {
+          alvos.push(el.tagName + '.' + String(el.className).slice(0,32) + ' L' + Math.round(r.left) + ' R' + Math.round(r.right));
+        }
+      });
+      document.title = 'W=' + document.documentElement.scrollWidth + ' I=' + i + ' :: ' + alvos.slice(0,8).join(' | ');
+    }, 400);
+  });
+  </script>
 </body>
 </html>

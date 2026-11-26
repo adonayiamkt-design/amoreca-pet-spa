@@ -267,6 +267,24 @@
     });
   }
 
+  /* ---------- Fotos sempre inteiras (sem corte) --------------
+     A moldura passa a usar a proporção real da imagem carregada,
+     então nenhuma foto é cortada — nem em PC, tablet ou celular. */
+  function fotosInteiras() {
+    document.querySelectorAll(".photo img").forEach(function (img) {
+      function aplicar() {
+        if (!img.naturalWidth || img.classList.contains("is-missing")) return;
+        var figura = img.closest(".photo");
+        if (figura) figura.style.aspectRatio = img.naturalWidth + " / " + img.naturalHeight;
+      }
+      if (img.complete) aplicar();
+      else {
+        img.addEventListener("load", aplicar);
+        img.addEventListener("error", aplicar);
+      }
+    });
+  }
+
   /* ---------- Inicialização --------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
     montarWhatsapp();
@@ -277,5 +295,6 @@
     animacoesScroll();
     galeria();
     ctasGaleria();
+    fotosInteiras();
   });
 })();

@@ -368,10 +368,10 @@ address { font-style: normal; }
   z-index: 1; /* garante que a foto carregada cubra o texto do espaço reservado */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* contain: a foto aparece inteira, sem cortes — o fundo vira moldura */
+  object-fit: contain;
+  background: var(--ph, var(--creme-2));
 }
-.photo:hover img { transform: scale(1.035); }
 .photo img.is-missing { visibility: hidden; }
 
 .photo__hint {
@@ -583,7 +583,6 @@ address { font-style: normal; }
 .gal--sq { grid-column: span 2; aspect-ratio: 1; }
 .gal--wide { grid-column: span 6; aspect-ratio: 21 / 9; }
 
-.gal--clicavel:hover img { transform: scale(1.045); }
 .gal--clicavel::after {
   content: "";
   position: absolute;
@@ -820,6 +819,10 @@ body.nav-open { overflow: hidden; }
   top: calc(var(--header-h) + 24px);
 }
 
+.valor-bloco__body {
+  min-width: 0; /* permite encolher: a tabela role para o lado em vez de estourar a página */
+}
+
 .valor-tag {
   display: inline-block;
   margin: 0 0 14px;
@@ -889,6 +892,7 @@ body.nav-open { overflow: hidden; }
   border-radius: 14px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 .tabela {
@@ -994,13 +998,16 @@ body.nav-open { overflow: hidden; }
   .gal--tall, .gal--sq { grid-column: span 3; }
   .gal--wide { grid-column: span 6; aspect-ratio: 16 / 9; }
 
-  /* Valores: foto acima, texto e tabelas abaixo */
-  .valor-bloco { grid-template-columns: 1fr; }
+  /* Valores: foto acima, texto e tabelas abaixo
+     (nth-child(even) precisa ser reafirmado: tem especificidade maior
+     que a regra base e mantinha blocos pares em 2 colunas no celular) */
+  .valor-bloco,
+  .valor-bloco:nth-child(even),
+  .valor-bloco.valor-bloco--full { grid-template-columns: minmax(0, 1fr); }
   .valor-bloco:nth-child(even) .valor-bloco__photo { order: 0; }
   .valor-bloco__photo {
     position: static;
-    aspect-ratio: 16 / 10;
-    max-height: 430px;
+    max-width: 460px; /* foto inteira, sem corte, também no celular */
   }
 
   /* Menu vira painel lateral elegante */
