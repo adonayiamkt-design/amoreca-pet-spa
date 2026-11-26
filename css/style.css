@@ -905,6 +905,20 @@ body.nav-open { overflow: hidden; }
   white-space: nowrap;
 }
 
+.tabela thead th small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.35;
+  color: var(--texto-suave);
+}
+
+.tabela--larga { min-width: 540px; }
+.tabela--larga thead th { white-space: normal; }
+
 .tabela tbody th,
 .tabela tbody td {
   padding: 13px 16px;
