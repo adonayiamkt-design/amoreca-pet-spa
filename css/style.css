@@ -364,7 +364,7 @@ address { font-style: normal; }
   letter-spacing: 0.02em;
 }
 
-/* ---------- Fotos e espaços reservados ---------------------- */
+/* ---------- Fotos ------------------------------------------- */
 .photo {
   margin: 0;
   position: relative;
@@ -377,41 +377,12 @@ address { font-style: normal; }
 
 .photo img {
   position: relative;
-  z-index: 1; /* garante que a foto carregada cubra o texto do espaço reservado */
+  z-index: 1;
   width: 100%;
   height: 100%;
   /* contain: a foto aparece inteira, sem cortes — o fundo vira moldura */
   object-fit: contain;
   background: var(--ph, var(--creme-2));
-}
-.photo img.is-missing { visibility: hidden; }
-
-.photo__hint {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-align: center;
-  padding: 20px;
-  font-family: var(--fonte-titulo);
-  font-style: italic;
-  font-size: 1.15rem;
-  color: rgba(43, 36, 34, 0.55);
-  border: 1.5px dashed rgba(43, 36, 34, 0.22);
-  border-radius: inherit;
-  margin: 10px;
-}
-.photo__hint small {
-  font-family: var(--fonte-texto);
-  font-style: normal;
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  line-height: 1.7;
-  color: rgba(43, 36, 34, 0.45);
 }
 
 .photo--sq { aspect-ratio: 1; }
