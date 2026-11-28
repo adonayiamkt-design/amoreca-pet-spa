@@ -555,16 +555,23 @@ address { font-style: normal; }
 /* ---------- Seção 7 — Galeria (grade editorial) ------------- */
 .galeria { background: var(--creme); }
 
+/* Grade em flex com justify-content:center: a última linha incompleta
+   fica centralizada e nenhuma foto é cortada (todas 1:1).
+   3 por linha no PC/tablet, 2 por linha no celular. */
 .galeria__grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: clamp(14px, 2vw, 22px);
+  --gal-gap: clamp(14px, 2vw, 22px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gal-gap);
 }
 
-.gal { margin: 0; cursor: zoom-in; }
-.gal--tall { grid-column: span 2; aspect-ratio: 4 / 5; }
-.gal--sq { grid-column: span 2; aspect-ratio: 1; }
-.gal--wide { grid-column: span 6; aspect-ratio: 21 / 9; }
+.gal {
+  margin: 0;
+  cursor: zoom-in;
+  flex: 0 0 calc((100% - 2 * var(--gal-gap)) / 3);
+  aspect-ratio: 1;
+}
 
 .gal--clicavel::after {
   content: "";
@@ -996,9 +1003,6 @@ body.nav-open { overflow: hidden; }
 
   .depoimentos { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
 
-  .gal--tall, .gal--sq { grid-column: span 3; }
-  .gal--wide { grid-column: span 6; aspect-ratio: 16 / 9; }
-
   /* Valores: foto acima, texto e tabelas abaixo
      (nth-child(even) precisa ser reafirmado: tem especificidade maior
      que a regra base e mantinha blocos pares em 2 colunas no celular) */
@@ -1064,8 +1068,8 @@ body.nav-open { overflow: hidden; }
 
   .prova__pets { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
-  .gal--tall, .gal--sq { grid-column: span 3; }
-  .gal--wide { grid-column: span 6; aspect-ratio: 4 / 3; }
+  /* Galeria: 2 fotos por linha, última linha centralizada */
+  .gal { flex-basis: calc((100% - var(--gal-gap)) / 2); }
 
   .band-cta { flex-direction: column; align-items: flex-start; }
 

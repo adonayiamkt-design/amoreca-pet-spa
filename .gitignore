@@ -6,3 +6,8 @@ site-publicacao.zip
 
 # Skills instaladas pelo Netlify CLI (não fazem parte do site)
 .agents/
+
+# Sobras de trabalho: originais baixados/gerados que o site não referencia
+913838809_*.jpg
+img/930340480_*.jpg
+img/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]-[0-9a-f]*.png
