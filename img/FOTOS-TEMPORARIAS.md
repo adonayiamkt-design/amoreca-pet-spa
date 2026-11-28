@@ -7,10 +7,11 @@ uso gratuito, inclusive comercial, sem necessidade de atribuição.
 | Arquivo | Onde aparece | Foto no Pexels |
 | --- | --- | --- |
 | `apresentacao.jpg` | Seção "Porque eles merecem o melhor" | https://www.pexels.com/photo/6131149/ |
-| `valores-banho.jpg` | Bloco "Banhos avulsos" | https://www.pexels.com/photo/6131161/ |
 | `valores-planos.jpg` | Bloco "Planos de banho e tosa" | https://www.pexels.com/photo/16544122/ |
 
 ## Já substituídas por fotos reais
+
+- `valores-banho.jpg` — bloco "Banhos avulsos" (banho com espuma na banheira)
 
 - `experiencia.jpg` — seção "Nossa experiência" (banho no salão)
 - `pet-1.jpg`, `pet-2.jpg`, `pet-3.jpg` — prova social
